@@ -95,12 +95,11 @@ class RandomForestModel(Model, BaseEstimator, RegressorMixin):
         self.model = RandomForestRegressor(**kwargs)   
 
 class VotingModel(Model, BaseEstimator, RegressorMixin):
-    """Voting Regressor combining RFC_1 and XGB_2."""
-    def __init__(self, estimators, voting='soft', weights=None):
+    """Voting Regressor combining models"""
+    def __init__(self, estimators,  weights=None):
         self.estimators = estimators
-        self.voting = voting
         self.weights = weights
-        self.model = VotingRegressor(estimators=self.estimators, voting=self.voting, weights=self.weights)     
+        self.model = VotingRegressor(estimators=self.estimators, weights=self.weights)     
         
 class ModelFactory:
     """Factory to create model instances."""
@@ -146,7 +145,7 @@ class Workflow_8:
             raise ValueError("CMI_GITHUB_TOKEN is not set. Please configure it in your environment.")
             
             
-            # Test the GitHub token
+        # Test the GitHub token
         self.test_github_token(github_token)
         
         

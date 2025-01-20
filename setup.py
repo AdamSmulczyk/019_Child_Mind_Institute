@@ -8,7 +8,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="cmi_regressor",
-    version="1.a.0", 
+    version="1.1.0", 
     author="Adam Smulczyk",
     author_email="adam.smulczyk@gmail.com",
     description="A tool for training and evaluating machine learning models on CMI.",
