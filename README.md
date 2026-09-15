@@ -2,6 +2,7 @@
 ### Full and extensive analysis can be found in the file eda_problematic_internet_use.py.
 
 - [I. PLANNING](#I)
+- 
     - [I.1 Introduction](#I.1)
     - [I.2 Dataset description](#I.2)
     - [I.3 Project assumptions](#I.3)
