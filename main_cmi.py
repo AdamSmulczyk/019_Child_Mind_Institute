@@ -10,7 +10,6 @@ from data_processor_cmi import preprocess_data
 
 # In[2]:
 
-
 def main():
     print('-' * 80)
     print('train')
